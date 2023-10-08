@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 
-
+//Hoang The Anh 20204938
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,9 +16,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    class Dice(val numSides: Int) {
-
-        fun roll(): Int {
+    class Dice(private val numSides: Int) {
+        fun roll(): Int {S
             return (1..numSides).random()
         }
     }
