@@ -16,11 +16,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    class Dice(private val numSides: Int) {
-        fun roll(): Int {
-            return (1..numSides).random()
-        }
-    }
     private fun rollDice() {
         val diceImage: ImageView = findViewById(R.id.imageView)
         val dice = Dice(6)
@@ -35,5 +30,10 @@ class MainActivity : AppCompatActivity() {
         }
         diceImage.setImageResource(drawableResource)
         diceImage.contentDescription = diceRoll.toString()
+    }
+}
+class Dice(private val numSides: Int) {
+    fun roll(): Int {
+        return (1..numSides).random()
     }
 }
